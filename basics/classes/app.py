@@ -1,0 +1,10 @@
+from Student import Student
+
+student1 = Student("Tom", "Business", 3.1, False)
+student2 = Student("Pam", "Art", 4.3, False)
+
+print(student1.name)
+print(student1.major)
+
+print(student2.gpa)
+print(student2.is_on_probation)
