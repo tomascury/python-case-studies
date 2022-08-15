@@ -1,3 +1,5 @@
+# source: https://www.youtube.com/watch?v=rfscVS0vtbw&ab_channel=freeCodeCamp.org
+
 def guess_game():
     secret_word = "Guessing"
     guess = ""
@@ -30,3 +32,19 @@ for letter in letters:
 letters_index = len(letters)
 for index in range(letters_index):
     print(letters[index])
+
+
+def translate(phrase):
+    translation = ""
+    for letter in phrase:
+        if letter.lower() in "aeiou":
+            if letter.isupper():
+                translation = translation + "G"
+            else:
+                translation = translation + "g"
+        else:
+            translation = translation + letter
+    return translation
+
+
+print(translate("To bE or not to bE"))
